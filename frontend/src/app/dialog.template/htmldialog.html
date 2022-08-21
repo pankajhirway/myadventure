@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Choose !!!</h1>
+<div mat-dialog-content>
+  <p>{{data.question}}</p>
+</div>
+<div *ngFor="let option of data.step.options">
+    <button  mat-button (click)="onClick(option.value,option.nextId,data.step.id)">{{option.value}}</button>
+</div>
+<button mat-button *ngIf="data.step.options.length == 0" (click)="onClick('','',data.step.id)">Finish</button>

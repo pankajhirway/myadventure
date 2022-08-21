@@ -1,0 +1,14 @@
+<div class="content">
+    <div class="flex-container">
+    <mat-form-field appearance="fill">
+        <mat-label>Select your Adventure !</mat-label>
+        <mat-select (selectionChange)="onSelectionChanged($event)">
+          <mat-option *ngFor="let adventure of adventures" [value]="adventure.id">
+            {{adventure.name}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button [routerLink]="['/game',selectedValue]" style="height: 50px;" [disabled]="!IsSelected" mat-raised-button color="primary">Start</button>
+</div>
+</div>
+

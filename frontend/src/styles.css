@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.spaced {
+  margin-left: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}

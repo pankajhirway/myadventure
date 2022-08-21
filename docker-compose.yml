@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  app:
+    build:  # specify the directory of the Dockerfile
+      context: ./frontend
+      dockerfile: dockerfile.be
+    ports:
+      - "80:80"
+    depends_on:
+      - "api" 
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Docker
+      AdventureDatabase__ConnectionString: "mongodb://db:27017"
+    depends_on:
+      - "db"
+  db:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:

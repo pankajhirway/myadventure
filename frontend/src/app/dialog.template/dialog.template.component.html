@@ -1,0 +1,55 @@
+<div class="content">
+<div class="flex-container">
+  
+    <div style="float:right;width: 100%">
+      <ngx-graph
+    class="chart-container"
+    [view]="[1600, 800]"
+    [links]="links"
+    [nodes]="nodes"
+    [layout]="layout"
+    [layoutSettings]="layoutSettings"
+  >
+  
+    <ng-template #nodeTemplate let-node>
+      <svg:g
+        class="node"
+        ngx-tooltip
+      >
+        <svg:rect
+          [attr.width]="200"
+          [attr.height]="100"
+          [attr.fill]="node.isSelected ? node.data.color : 'Lightgray'"
+          [attr.stroke-width]="node.isSelected ? 8:2"
+        />
+        <svg:text alignment-baseline="central" [attr.font-weight]="node.isSelected ? 'bold':'normal'" [attr.x]="10" [attr.y]="node.dimension.height / 2">
+          {{node.label}}
+        </svg:text>
+      </svg:g>
+    </ng-template>
+  
+    <ng-template #linkTemplate let-link>
+      <svg:g class="edge">
+        <svg:path class="line" [attr.stroke]="link.isSelected ? 'red':'Lightgray'" [attr.stroke-width]="link.isSelected ? 4:2"  marker-end="url(#arrow)"></svg:path>
+        <svg:text class="edge-label" [attr.font-weight]="link.isSelected ? 'bold':'normal'" text-anchor="middle">
+          <textPath
+           
+            class="text-path"
+            [attr.href]="'#' + link.id"
+            [style.dominant-baseline]="link.dominantBaseline"
+            [attr.stroke-width]="link.isSelected ? 8:2" 
+            startOffset="50%"
+          >
+            {{link.label}}
+          </textPath>
+        </svg:text>
+      </svg:g>
+      
+    </ng-template>  
+  </ngx-graph>
+    </div>
+  </div>
+  
+</div> 
+  
+  
