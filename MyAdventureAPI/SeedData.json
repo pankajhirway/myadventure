@@ -1,0 +1,67 @@
+﻿{
+  "Name": "What should I Order ?",
+  "Steps": [
+    {
+      "Question": "Do you want to Order Food ?",
+      "Id": "1",
+      "Options": [
+        {
+          "Value": "Yes",
+          "NextId": "2"
+        },
+        {
+          "Value": "No",
+          "NextId": "3"
+        }
+      ]
+    },
+    {
+      "Question": "What do you feel like eating ?",
+      "Id": "2",
+      "Options": [
+        {
+          "Value": "Indian",
+          "NextId": "4"
+        },
+        {
+          "Value": "Chinese",
+          "NextId": "5"
+        }
+      ]
+    },
+    {
+      "Question": "Okay, You are not hungry is Seems!!",
+      "Id": "3",
+      "Options": []
+    },
+    {
+      "Question": "Okay, Which Indian dish to order!!",
+      "Id": "4",
+      "Options": [
+        {
+          "Value": "Daal Roti",
+          "NextId": "6"
+        },
+        {
+          "Value": "Biryani",
+          "NextId": "7"
+        }
+      ]
+    },
+    {
+      "Question": "Bad Luck, Chinese take out is close !!",
+      "Id": "5",
+      "Options": []
+    },
+    {
+      "Question": "Okay, Enjoy your Daal Roti!!",
+      "Id": "6",
+      "Options": []
+    },
+    {
+      "Question": "Okay, Enjoy your Biryani!!",
+      "Id": "7",
+      "Options": []
+    }
+  ]
+}

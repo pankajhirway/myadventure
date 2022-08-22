@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{7377FD8D-D076-491A-9BB5-ED5DA968363F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="dockerfile">
+    <Files>
+      <File FileName="MyAdventureAPI.Tests/UnitTest1.cs" Line="8" Column="9" />
+      <File FileName="MyAdventureAPI/Controllers/AdventureController.cs" />
+      <File FileName="MyAdventureAPI/Service/AdventureService.cs" Line="44" Column="1" />
+      <File FileName="MyAdventureAPI/models/AdventuretoreDatabaseSettings.cs" />
+      <File FileName="MyAdventureAPI/models/AdventureStepRecord.cs" />
+      <File FileName="MyAdventureAPI/models/AdventureStep.cs" />
+      <File FileName="MyAdventureAPI/models/AdventureStartRequest.cs" />
+      <File FileName="MyAdventureAPI/models/AdventureSession.cs" />
+      <File FileName="MyAdventureAPI/models/AdventureOption.cs" />
+      <File FileName="MyAdventureAPI/models/Adventure.cs" Line="12" Column="1" />
+      <File FileName="MyAdventureAPI.Tests/AdventureControllerTest.cs" />
+      <File FileName="MyAdventureAPI/Startup.cs" Line="6" Column="1" />
+      <File FileName="MyAdventureAPI/SeedData.json" Line="1" Column="1" />
+      <File FileName="MyAdventureAPI/Controllers/GameController.cs" />
+      <File FileName="docker-compose.yml" Line="1" Column="1" />
+      <File FileName="MyAdventureAPI/Program.cs" Line="16" Column="1" />
+      <File FileName="MyAdventureAPI/appsettings.json" Line="16" Column="25" />
+      <File FileName="dockerfile" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyAdventureAPI" expanded="True">
+            <Node name="Solution Items" expanded="True">
+              <Node name="/Users/pankaj.hirway@avalara.com/Documents/lobsterInk/lobsterink_adventure/dockerfile" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="MyAdventureAPI" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/pankaj.hirway@avalara.com/Documents/lobsterInk/lobsterink_adventure/MyAdventureAPI/Service/AdventureService.cs" relfile="MyAdventureAPI/Service/AdventureService.cs" line="109" column="1" />
+      <Breakpoint file="/Users/pankaj.hirway@avalara.com/Documents/lobsterInk/lobsterink_adventure/MyAdventureAPI/Service/AdventureService.cs" relfile="MyAdventureAPI/Service/AdventureService.cs" line="30" column="1" />
+      <Breakpoint file="/Users/pankaj.hirway@avalara.com/Documents/lobsterInk/lobsterink_adventure/MyAdventureAPI/Service/AdventureService.cs" relfile="MyAdventureAPI/Service/AdventureService.cs" line="44" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MyAdventureAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

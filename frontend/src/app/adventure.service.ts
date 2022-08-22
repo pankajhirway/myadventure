@@ -8,7 +8,7 @@ import { catchError, Observable, of, tap } from 'rxjs';
 })
 export class AdventureService {
 
-  baseURI: string =  isDevMode() ? "http://localhost" : "http://localhost:8080"
+  baseURI: string =  isDevMode() ? "http://localhost:8080" : "http://localhost:8080"
 
   constructor(private httpclient: HttpClient) { }
 

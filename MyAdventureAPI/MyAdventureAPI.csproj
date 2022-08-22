@@ -10,7 +10,6 @@
     <None Remove="Microsoft.Extensions.Logging" />
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="models\" />
-    <None Remove="DatabaseContext\" />
     <None Remove="MongoDB.Bson" />
     <None Remove="MongoDB.Driver" />
     <None Remove="MongoDB.Driver.Core" />
@@ -27,7 +26,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="models\" />
-    <Folder Include="DatabaseContext\" />
     <Folder Include="Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="SeedData.json" />
   </ItemGroup>
 </Project>
